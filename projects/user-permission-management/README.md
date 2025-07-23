@@ -1,12 +1,12 @@
-# Project 3: User and Permission management
+# Project 3: User and Permission Management
 
-This project demonstrates how to manage users, groups, and permissioons in Linux.
+This project demonstrates how to manage users, groups, and permissions in Linux.
 
 ---
 
 ## Steps
 
-### 1. Create users
+### 1. Create Users
 
 ```bash
 sudo adduser alice
@@ -25,7 +25,7 @@ sudo usermod -aG projectteam bob
 
 ---
 
-### 3. Create shared folder
+### 3. Create Shared Folder
 
 ```bash
 sudo mkdir /srv/project
@@ -35,14 +35,13 @@ sudo chmod 770 /srv/project
 
 ---
 
-### 4. Test access
+### 4. Test Access
 
 ```bash
 su - alice
 cd /srv/project
 touch testfile_by_alice
 exit
-```
 
 su - bob
 cd /srv/project
@@ -54,7 +53,5 @@ exit
 
 ## Result
 
-- Only `alice` and `bob` (group: projectteam) can access and write to `/srv/project`.
+- Only `alice` and `bob` (members of `projectteam`) can access and write to `/srv/project`.
 - Other users have no access.
-
----
