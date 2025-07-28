@@ -1,4 +1,4 @@
-# Project 3: User and Permission Management
+# User and Permission Management
 
 This project demonstrates how to manage users, groups, and permissions in Linux.
 
